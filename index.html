@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Todo with Ls</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body style="background-color: #ededed;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <form action="" id="form">
+                            <div class="card-header">
+                                 <h3 class="text-center fa-2x bg-primary"> Add Todo </h3>
+                                 <input type="text" class="form-control" id="forminput">
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                
+                                <button type="submit" id="submit" class="btn btn-sm btn-success"> Add Todo </button>
+                                <button type="button" id="update" class="btn btn-sm btn-primary d-none"> Update Todo </button>
+                                <button type="button" id="remove" class="btn btn-sm btn-danger"> Remove </button>
+                            </div>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-5">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <ul class="list-group" id="listcontainer" >
+                            <!-- <li class=""> <strong>java </strong>
+                                <div>
+                                     <i class="fa-solid fa-2x fa-pen-to-square text-info" role="button"></i>
+                                     <i class="fa-solid fa-trash-can fa-2x text-danger" role="button"></i>
+                                </div> 
+                            </li>-->
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/app.js"> </script>
+</body>
+</html>
